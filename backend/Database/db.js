@@ -4,7 +4,7 @@ const mongoURI = process.env.MONGODB_URI;
 
 const connectToMongo = () => {
   mongoose
-    .connect("mongodb+srv://rohit:fOF4M4wXjb0WGmuZ@cluster0.dyj8tet.mongodb.net/cms")
+    .connect(mongoURI)
     // retryWrites=true&w=majority
     .then(() => {
       console.log("Connected to MongoDB Successfully");
